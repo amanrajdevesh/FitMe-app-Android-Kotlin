@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.byfreakdevs.fitme.R
 import com.byfreakdevs.fitme.models.Item
 
-class DashboardRecyclerViewAdapter (private val foodDetailsArrayList: ArrayList<FoodDetails>)
+class DashboardRecyclerViewAdapter (private val foodDetailsArrayList : ArrayList<FoodDetails>)
     : RecyclerView.Adapter<DashboardRecyclerViewAdapter.FoodDetailsHolder>() {
+
+
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): FoodDetailsHolder {
         val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.dashboard_recyclerview_items, viewGroup, false)

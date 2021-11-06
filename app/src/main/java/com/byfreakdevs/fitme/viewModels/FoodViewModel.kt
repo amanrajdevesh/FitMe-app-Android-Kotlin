@@ -18,7 +18,7 @@ class FoodViewModel(private val foodRepository: FoodRepository) : ViewModel() {
 
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
-                    foodList.value = response.body()!!.items
+                    foodList.value = response.body()?.items
                 } else {
                     Log.d("baibhav", "error")
                 }
